@@ -4,7 +4,7 @@ requires = ['pyyaml']
 setup(
     name='paspas',
     version='0.0.1',
-    package=['paspas'],
+    packages=['paspas'],
     description='Simple password generator for CLI',
     url='https://github.com/hirokikana/paspas',
     author='Hiroki Takayasu',
