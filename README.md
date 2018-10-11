@@ -1,9 +1,7 @@
 paspas
 ====
 
-.. image:: https://travis-ci.org/hirokikana/paspas.svg?branch=master
-   :target: https://travis-ci.org/hirokikana/paspas
-   :alt: Build Status
+[![Build Status](https://travis-ci.org/hirokikana/paspas.svg?branch=master)](https://travis-ci.org/hirokikana/paspas)
 
 ## Description
 paspas is simple password generator for CLI.
