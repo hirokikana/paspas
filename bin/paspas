@@ -13,10 +13,12 @@ parser.add_argument("-u", "--user", dest="user", help="user name", required=True
 parser.add_argument("-m", "--master", dest="master", help="master password", required=True)
 args = parser.parse_args()
 
-config_dir = os.environ['HOME']
-f = open(config_dir + "/.paspas")
-config = yaml.load(f)
-f.close()
+config_path = os.environ['HOME'] + '/.paspas'
+config = {}
+if os.path.exists(config_path):
+    f = open(config_path)
+    config = yaml.load(f)
+    f.close()
 
 max_length = 0
 if config.has_key(args.site) and config[args.site].has_key('max_length'):
