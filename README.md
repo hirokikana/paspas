@@ -12,7 +12,7 @@ pip install paspas
 
 ## Usage
 ```
-$ paspas help
+$ paspas --help
 ```
 
 ```
@@ -26,6 +26,9 @@ google:
  unavailable_char: !@#
 ```
 
+optional argument
 ```
---master=master_password, -m master password
+  -s SITE, --site SITE        site name
+  -u USER, --user USER        user name
+  -m MASTER, --master MASTER  master password
 ```
