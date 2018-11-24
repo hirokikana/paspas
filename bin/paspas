@@ -22,7 +22,7 @@ if os.path.exists(config_path):
 
 max_length = 0
 if command_args.site in config and 'max_length' in config[command_args.site]:
-    max_length = config[args.site]['max_length']
+    max_length = config[command_args.site]['max_length']
 
 password = paspas.generator.generate(command_args.site, command_args.user, command_args.master, max_length).strip()
 print(password)
