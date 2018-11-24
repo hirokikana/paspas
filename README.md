@@ -19,8 +19,9 @@ $ paspas --help
 $ paspas --site=google --user=bob --master=secret
 ```
 
-site settings is yaml format. setting save to `~/.paspas` .
+site settings and master password is yaml format. setting save to `~/.paspas` .
 ```
+master_password: secret
 google:
  max_length: 30
  unavailable_char: !@#
